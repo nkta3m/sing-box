@@ -275,4 +275,4 @@ System HTTP proxy settings.
 
 ### Listen Fields
 
-See [Listen Fields](/configuration/shared/listen) for details.
+See [Listen Fields](/configuration/shared/listen/) for details.
