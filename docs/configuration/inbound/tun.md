@@ -5,7 +5,7 @@ icon: material/alert-decagram
 !!! quote "Changes in sing-box 1.8.0"
 
     :material-plus: [gso](#gso)  
-    :material-plus: [gso_max_size](#gso_max_size)  
+    :material-plus: [tx_checksum_offload](#tx_checksum_offload)  
     :material-alert-decagram: [stack](#stack)
 
 !!! quote ""
@@ -23,7 +23,7 @@ icon: material/alert-decagram
   "inet6_address": "fdfe:dcba:9876::1/126",
   "mtu": 9000,
   "gso": false,
-  "gso_max_size": 65536,
+  "tx_checksum_offload": false,
   "auto_route": true,
   "strict_route": true,
   "inet4_route_address": [
@@ -120,7 +120,7 @@ The maximum transmission unit.
 
 Enable generic segmentation offload.
 
-#### gso_max_size
+#### tx_checksum_offload
 
 !!! question "Since sing-box 1.8.0"
 
@@ -128,9 +128,7 @@ Enable generic segmentation offload.
 
     Only supported on Linux.
 
-Maximum GSO packet size.
-
-`65536` is used by default.
+Enable TX checksum offload.
 
 #### auto_route
 
